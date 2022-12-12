@@ -71,8 +71,16 @@ namespace Queues_144
                 if (FRONT == max -1)
                     FRONT = 0;
                 else
-                    /* FRONT is in 
+                    /* FRONT is incremented by one if it is not the first element of array. */
+                    FRONT = FRONT + 1;
+
             }
+        }
+        public void display()
+        {
+            int FRONT_position = FRONT;
+            int REAR_position = REAR;
+            /*
         }
         static void Main(string[] args)
         {
