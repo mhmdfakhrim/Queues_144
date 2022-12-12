@@ -89,7 +89,23 @@ namespace Queues_144
             Console.WriteLine("\nElements in the queue are .................\n");
             if (FRONT_position <= REAR_position)
             {
-                /* 
+                /* traverse the queue till the last element present in an array. */
+                while (FRONT_position < REAR_position)
+                {
+                    Console.Write(queue_array[FRONT_position] + "    ");
+                    FRONT_position++;
+                }
+                Console.WriteLine();
+            }
+            else
+            {
+                /* traverses the queue till the last position of the array.*/
+                while (FRONT_position <= max -1)
+                {
+                    Console.Write(queue_array[FRONT_position] + "     ");
+                    FRONT_position++;
+                }
+                *
             }
         }
         static void Main(string[] args)
