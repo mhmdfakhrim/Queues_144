@@ -113,11 +113,26 @@ namespace Queues_144
                     Console.Write(queue_array[FRONT_position] + "      ");
                     FRONT_position++;
                 }
-                Console.WriteLine() ;
+                Console.WriteLine();
             }
         }
         static void Main(string[] args)
         {
+            Queue queue = new Queue();
+            char ch;
+            while(true)
+            {
+                try
+                {
+                    Console.WriteLine("Menu");
+                    Console.WriteLine("1. Implement insert operation");
+                    Console.WriteLine("2. Implement delete operation");
+                    Console.WriteLine("3. Display Values");
+                    Console.WriteLine("4. Exit");
+                    Console.Write("\nEnter your choice (1-4): ");
+                    ch = Convert.ToChar
+                }
+            }
         }
     }
 }
