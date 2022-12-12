@@ -137,7 +137,7 @@ namespace Queues_144
                         case '1':
                             {
                                 Console.Write("Enter a number:   ");
-                                int num = Convert.ToInt32(System.Console.ReadLine);
+                                int num = Convert.ToInt32(System.Console.ReadLine());
                                 Console.WriteLine();
                                 queue.insert(num);
                             }
