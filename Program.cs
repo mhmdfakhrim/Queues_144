@@ -130,7 +130,7 @@ namespace Queues_144
                     Console.WriteLine("3. Display Values");
                     Console.WriteLine("4. Exit");
                     Console.Write("\nEnter your choice (1-4): ");
-                    ch = Convert.ToChar(Console.Read());
+                    ch = Convert.ToChar(Console.ReadLine());
                     Console.WriteLine();
                     switch (ch)
                     {
