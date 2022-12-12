@@ -42,8 +42,23 @@ namespace Queues_144
                 if (REAR == max - 1)
                     REAR = 0;
                 else
-                    /* if REAR is not at he last position
+                    /* if REAR is not at he last position, then its value is incremented by one */
+                    REAR = REAR + 1;
             }
+            /* Once the position of REAR is determined, the element is added at its proper place. */
+            queue_array[REAR] = element;
+        }
+
+        public void remove()
+        {
+            /* Checks whether the queue is empty. */
+            if (FRONT == -1)
+            {
+                Console.WriteLine("Queue underflow\n");
+                return;
+            }
+            Console.WriteLine("\nThe Element deleted from the queue is: " + queue_array[FRONT] + "\n");
+            /* Chec
         }
         static void Main(string[] args)
         {
